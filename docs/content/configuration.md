@@ -108,7 +108,7 @@ The **System** page (`/misc`) provides device management tools, HomeKit settings
 At the top of the page, the **Quick Actions** toolbar provides immediate device management buttons:
 *   **Reboot:** Reboots the device immediately.
 *   **Start AP:** Manually starts the Wi-Fi setup Access Point (`HK_` followed by the device's MAC address suffix, e.g. `HK_A1B2C3D4`, using the configured AP password).
-*   **Reset HomeKit:** Clears HomeKit pairing database (requires re-pairing with the Home app).
+*   **Reset HomeKit:** Clears the HomeKit pairing database and reboots the device. Pair the accessory again in the Home app after it comes back online.
 *   **Reset WiFi:** Erases saved Wi-Fi network credentials and restarts in AP mode.
 
 Below Quick Actions, settings are structured into three intuitive tabs: **HomeKit**, **Hardware**, and **Security**.

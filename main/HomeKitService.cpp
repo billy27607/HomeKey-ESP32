@@ -21,6 +21,7 @@
 #include "esp_app_desc.h"
 #include "esp_log.h"
 #include "esp_mac.h"
+#include "esp_system.h"
 #include "fmt/ranges.h"
 
 #include <sodium/crypto_sign.h>
@@ -612,6 +613,9 @@ void HomeKitService::factoryReset() {
   postToHapTask([this] {
     m_server->factory_reset();
     m_readerDataManager.deleteAllReaderData();
+    ESP_LOGI(TAG, "HomeKit factory reset complete; restarting device");
+    vTaskDelay(pdMS_TO_TICKS(500));
+    esp_restart();
   });
 }
 
