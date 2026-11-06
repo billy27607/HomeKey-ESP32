@@ -49,6 +49,20 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 1.1.1
+  espressif/dp83848:
+    component_hash: 9a2ee6548ade0954e86c0e8230eac39564fcd8804b0e0756d162eea57637fdde
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=6.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32p4
+    - esp32s31
+    version: 1.1.0
   espressif/keyboard_button:
     component_hash: 279c39638441e56fc4822fa09e77514632dc0f61044aa6acee6cf8e2047ad8dd
     dependencies:
@@ -63,6 +77,20 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 1.0.2
+  espressif/ksz80xx:
+    component_hash: 9cb3e17bc816419965aa6345108242ef6a412cba148620e645d6401aedd2336f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=6.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32p4
+    - esp32s31
+    version: 1.1.0
   espressif/ksz8851snl:
     component_hash: 248c4eafb0359941810a304f197ec9c3a5a898a89d18a12dae29343ad869f6bd
     dependencies:
@@ -73,6 +101,20 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 1.2.0
+  espressif/lan87xx:
+    component_hash: 085305ca93c456f6731f38459f56b585c41c8c752a09a11f3cb55ea1a27c71e9
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=6.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32p4
+    - esp32s31
+    version: 1.1.0
   espressif/libsodium:
     component_hash: d4066b373fc6d4c5196db42aeea7faef4ac7f3080af96c2b74e2476c08b78dc1
     dependencies:
@@ -103,6 +145,20 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 1.1.0
+  espressif/rtl8201:
+    component_hash: 5722159625a63f3fa005cc8796a9db8844586a3764f3bfb74ffc976e1277eb75
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=6.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32p4
+    - esp32s31
+    version: 1.1.0
   espressif/w5500:
     component_hash: b5f5b466dd0b8f1f2de7ac5b7e4a364e993daf40c999044a54fb545e25be8aba
     dependencies:
@@ -118,7 +174,7 @@ dependencies:
       type: service
     version: 2.0.0
   espressif/wiznet_common:
-    component_hash: 57414f4b8ce11295c03030da7ff3ef90184e07b3ba1e8985b5edb2461e9be780
+    component_hash: c32814cb872f0dca09f0c97ab231f9264a65bacc13fab6baf65f71959269a73d
     dependencies:
     - name: idf
       require: private
@@ -126,7 +182,7 @@ dependencies:
     source:
       registry_url: https://components.espressif.com
       type: service
-    version: 1.0.0
+    version: 1.1.0
   idf:
     source:
       type: idf
@@ -146,14 +202,18 @@ direct_dependencies:
 - espressif/cbor
 - espressif/cjson
 - espressif/dm9051
+- espressif/dp83848
 - espressif/keyboard_button
+- espressif/ksz80xx
 - espressif/ksz8851snl
+- espressif/lan87xx
 - espressif/libsodium
 - espressif/mdns
 - espressif/mqtt
+- espressif/rtl8201
 - espressif/w5500
 - idf
 - joltwallet/littlefs
 manifest_hash: cfb5c9d1388da89b4828e7dfc0dff00aa3d8d1c38c86798de13675e1eb4c7b0c
-target: esp32c6
+target: esp32
 version: 3.0.0
